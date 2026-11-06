@@ -1,0 +1,8 @@
+# Only pages with public, user-approved content are listed.
+main:
+  - title: "Home"
+    url: /
+  - title: "Research"
+    url: /research/
+  - title: "CV"
+    url: /cv/

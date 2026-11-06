@@ -1,0 +1,12 @@
+{% include base_path %}
+<header class="masthead">
+  <nav class="site-navigation" aria-label="Main navigation">
+    <a class="site-name" href="{{ base_path }}/">{{ site.title }}</a>
+    <ul class="site-links">
+      {% for link in site.data.navigation.main %}
+      <li><a href="{{ base_path }}{{ link.url }}"{% if link.new_tab %} target="_blank" rel="noopener" aria-label="{{ link.title }} (PDF, opens in a new tab)"{% endif %}{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
+      {% endfor %}
+      <li><button id="theme-toggle" type="button" aria-label="Toggle color theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i></button></li>
+    </ul>
+  </nav>
+</header>

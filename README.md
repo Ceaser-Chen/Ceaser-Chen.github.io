@@ -2,7 +2,7 @@
 
 Personal website using the official [Academic Pages](https://github.com/academicpages/academicpages.github.io) default theme, based on upstream commit `9e19e6318817bd3a6060a76d5af98124d394f3a0`.
 
-This version uses information already public at https://sites.google.com/view/yunyuechen and the owner's explicitly approved homepage and job market paper content. The homepage contains only three short paragraphs. Research contains the job market paper, awards and selected central bank presentations. The CV navigation currently leads to a placeholder page. No CV PDF is included in the site source or publication package.
+This version uses information already public at https://sites.google.com/view/yunyuechen and the owner's explicitly approved homepage and job market paper content. The homepage contains only three short paragraphs. Research contains the job market paper, awards and selected central bank presentations. The CV page displays the owner-approved public CV PDF and provides viewing and download links.
 
 ## Update content
 
@@ -10,10 +10,11 @@ This version uses information already public at https://sites.google.com/view/yu
 - Research page: `_pages/research.md`
 - Sidebar information: `_config.yml`
 - Navigation: `_data/navigation.yml`
-- CV placeholder: `_pages/cv.md`
+- CV page: `_pages/cv.md`
+- Approved public CV: `files/Yunyue_Chen_CV.pdf`
 - Original profile photo: `images/yunyue-chen.jpg`
 
-Academic Pages remains the base theme. `_sass/layout/_profile.scss` implements the agreed compact portrait, wider text column, mobile layout, and footer in document flow. The navigation includes Home, Research and a CV placeholder page. Keep `site_theme: default` in `_config.yml`.
+Academic Pages remains the base theme. `_sass/layout/_profile.scss` implements the agreed compact portrait, wider text column, mobile layout, and footer in document flow. The navigation includes Home, Research and CV. Keep `site_theme: default` in `_config.yml`.
 
 ## Publish on GitHub Pages
 
@@ -37,6 +38,6 @@ bundle exec jekyll serve --host 127.0.0.1
 
 ## Future additions
 
-Add publications or a public CV only after the owner supplies and approves the exact public content. Do not upload the source CV or infer permission from its contents. All PDF files are ignored. Do not upload a CV until the owner explicitly requests it.
+Add publications or update the public CV only after the owner supplies and approves the exact public content. Do not upload the private source CV or infer permission from its contents. PDF files are ignored except for `files/Yunyue_Chen_CV.pdf`, which contains only the exact public CV approved by the owner.
 
 Academic Pages and Minimal Mistakes attribution and the upstream MIT license are preserved.

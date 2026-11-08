@@ -30,3 +30,6 @@ assets/js/main.min.js
 private/
 *.pdf
 
+# Only the exact public CV approved by the owner may be published.
+!files/Yunyue_Chen_CV.pdf
+
